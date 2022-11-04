@@ -26,11 +26,19 @@ createApp({
   },
   methods:{
     newTask(){
-      createTask= {text : '' , done:false}
-      createTask.text = this.typeTask
+      
+      this.error = '';
+      if(this.typeTask.length < 5){
+        this.error = "Non meno di 5 caratteri";
+        this.typeTask = '';
+      } else{
 
-      this.tasks.unshift(createTask);
-      console.log(this.tasks);
+        createTask= {text : '' , done:false};
+        createTask.text = this.typeTask;
+        this.tasks.unshift(createTask);
+        console.log(this.tasks);
+      }
+      this.typeTask = '';
     },
     removeTask(index){
       if(this.tasks[index].done){
