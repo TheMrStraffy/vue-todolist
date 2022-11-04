@@ -1,8 +1,22 @@
+
+li{
+  list-style-type: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 20px;
+}
+li:hover{
+  background-color: white;
+}
+li i{
+  cursor: pointer;
+}
 .logo{
   width: 100%;
 }
 .logo img{
   width: 30%;
-  object-fit: cover;
-  
+  object-fit: cover; 
+}
+.todoList{
+  padding: 20px;
 }
