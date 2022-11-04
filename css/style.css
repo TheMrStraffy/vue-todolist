@@ -20,3 +20,6 @@ li i{
 .todoList{
   padding: 20px;
 }
+li span.lineThrough{
+  text-decoration: line-through;
+}
