@@ -21,17 +21,15 @@ createApp({
         },
       ],
       
-      createTask: {text : '' , done:false}
-      
       
     }
   },
   methods:{
     newTask(){
-      // this.createTask.push({text:this.typeTask , done:false});
-      this.createTask.text = this.typeTask
+      createTask= {text : '' , done:false}
+      createTask.text = this.typeTask
 
-      this.tasks.unshift(this.createTask);
+      this.tasks.unshift(createTask);
       console.log(this.tasks);
     },
     removeTask(index){
