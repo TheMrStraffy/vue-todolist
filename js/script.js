@@ -4,29 +4,35 @@ createApp({
   data(){
     return{
       logo: "img/logo.png",
-      typeTask: "",
       error: "",
+      typeTask: '',
       tasks: [
         {
           text: "Studiare assai",
           done: false
         },
         {
-          text: "Comporre almeno una canzone",
+          text: "Fai quello",
           done: true
         },
         {
-          text: "Scrivere 3 poesie",
+          text: "Fai questo",
           done: false
         },
       ],
-      createTask: {text: this.typeTask, done: false}
-
+      
+      createTask: {text : '' , done:false}
+      
+      
     }
   },
   methods:{
     newTask(){
-      this.tasks.push(this.createTask);
+      // this.createTask.push({text:this.typeTask , done:false});
+      this.createTask.text = this.typeTask
+
+      this.tasks.unshift(this.createTask);
+      console.log(this.tasks);
     },
     removeTask(index){
       if(this.tasks[index].done){
