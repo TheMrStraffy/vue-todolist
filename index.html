@@ -27,6 +27,7 @@
     </div>
     <p class="d-flex justify-content-center text-danger">{{error}}</p>
     <div class="todoList bg-light">
+      <h4 v-if="tasks.length === 0"> Nulla nella lista</h4>
       <ul class="p-0 m-0">
         <li 
         v-for="(task, index) in tasks"
