@@ -1,4 +1,7 @@
-
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.8323704481792717) 0%, rgba(87,162,84,0.48783263305322133) 50%, rgba(0,0,0,0.8071603641456583) 100%);
+}
 li{
   list-style-type: none;
   border-bottom: 1px solid lightgray;
