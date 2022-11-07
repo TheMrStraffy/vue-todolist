@@ -19,10 +19,13 @@
       <input
       v-model.trim="typeTask"
       type="text" placeholder="New Task" class="w-50 rounded-3"
+      
+      @keyup.enter="newTask()"
       >
       <button 
       class="w-25 rounded-3 border-1 border-secondary"
       @click="newTask()"
+      
       >Aggiungi</button>
     </div>
     <p class="d-flex justify-content-center text-danger">{{error}}</p>
