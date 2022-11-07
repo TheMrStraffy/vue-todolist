@@ -8,15 +8,15 @@ createApp({
       typeTask: '',
       tasks: [
         {
-          text: "Studiare assai",
+          text: "Prepara impasto",
           done: false
         },
         {
-          text: "Fai quello",
+          text: "Accendi il forno",
           done: true
         },
         {
-          text: "Fai questo",
+          text: "Fai i panetti",
           done: false
         },
       ],
